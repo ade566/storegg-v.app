@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-css-tags */
 /* eslint-disable @next/next/no-page-custom-font */
 
 import { Inter } from 'next/font/google'
@@ -6,8 +5,8 @@ import Script from 'next/script'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-// import '../styles/utilities.css'
-// import '../styles/homepage.css'
+import '../styles/utilities.css'
+import '../styles/homepage.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,9 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="/utilities.css" rel="stylesheet" />
-        <link href="/homepage.css" rel="stylesheet" />
-        
         {/* google font */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
