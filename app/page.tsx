@@ -252,7 +252,7 @@ export default function Home() {
           <div className="d-flex flex-row flex-lg-wrap overflow-setting justify-content-lg-between gap-lg-3 gap-4"
             data-aos="fade-up">
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <Image src="/img/Thumbnail-1.png" width={205} height={270} alt="" />
                 </div>
@@ -276,7 +276,7 @@ export default function Home() {
 
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <Image src="/img/Thumbnail-2.png" width={205} height={270} alt="" />
                 </div>
@@ -300,7 +300,7 @@ export default function Home() {
 
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <Image src="/img/Thumbnail-3.png" width={205} height={270} alt="" />
                 </div>
@@ -324,7 +324,7 @@ export default function Home() {
 
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <Image src="/img/Thumbnail-4.png" width={205} height={270} alt="" />
                 </div>
@@ -348,7 +348,7 @@ export default function Home() {
 
             </div>
             <div className="featured-game-card position-relative">
-              <a href="./src/detail.html">
+              <a href="/detail">
                 <div className="blur-sharp">
                   <Image src="/img/Thumbnail-5.png" width={205} height={270} alt="" />
                 </div>
