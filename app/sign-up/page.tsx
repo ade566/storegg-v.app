@@ -1,4 +1,4 @@
-export default function SignIn() {
+export default function SignUp() {
   return (
     <section className="sign-up mx-auto pt-lg-100 pb-lg-100 pt-30 pb-47">
       <div className="container mx-auto">
@@ -42,7 +42,7 @@ export default function SignIn() {
           </div>
           <div className="button-group d-flex flex-column mx-auto pt-50">
             <a className="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
-              href="../src/sign-up-photo.html" role="button">Continue</a>
+              href="/sign-up-photo" role="button">Continue</a>
             {/* <button type="submit" className="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
               role="button">Continue</button> */}
             <a className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill" href="../src/sign-in.html"
