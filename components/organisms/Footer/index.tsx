@@ -1,4 +1,4 @@
-export function Footer() {
+export default function Footer() {
   return (
     <section className="footer pt-50">
       <footer>

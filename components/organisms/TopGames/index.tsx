@@ -1,6 +1,7 @@
-import { Game } from "@/components/molecules/Game"
+import Game from "@/components/molecules/Game";
 
-export function TopGames() {
+
+export default function TopGames() {
   return (
     <section className="featured-game pt-50 pb-50">
       <div className="container-fluid">
@@ -8,7 +9,7 @@ export function TopGames() {
         </h2>
         <div className="d-flex flex-row flex-lg-wrap overflow-setting justify-content-lg-between gap-lg-3 gap-4"
           data-aos="fade-up">
-
+            
           <Game title="Super Mechs" category="Mobile" image="/img/Thumbnail-1.png" href="/detail/1" />
 
           <Game title="Call of Duty: Modern" category="Mobile" image="/img/Thumbnail-2.png" href="/detail/2" />

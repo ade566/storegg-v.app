@@ -1,6 +1,6 @@
-import { Step } from "./Step";
+import Step from "./Step";
 
-export function TopUpSteps() {
+export default function TopUpSteps() {
   return (
     <section id="feature" className="feature pt-50 pb-50">
       <div className="container-fluid">

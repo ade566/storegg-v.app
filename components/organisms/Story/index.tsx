@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export function Story() {
+export default function Story() {
   return (
     <section className="story pt-50 pb-50">
       <div className="container-xxl container-fluid">

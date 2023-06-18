@@ -7,7 +7,7 @@ interface MenuProps {
   href: string;
 }
 
-export function Menu(props: Partial<MenuProps>) {
+export default function Menu(props: Partial<MenuProps>) {
 
   const {
     title, 

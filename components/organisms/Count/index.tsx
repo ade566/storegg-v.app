@@ -1,6 +1,6 @@
-import { CountRow } from "./Row";
+import CountRow from "./Row";
 
-export function Count() {
+export default function Count() {
   return (
     <section className="reached pt-50 pb-50">
       <div className="container-fluid">

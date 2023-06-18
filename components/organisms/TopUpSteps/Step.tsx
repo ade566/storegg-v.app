@@ -6,7 +6,7 @@ interface StepProps {
   image: string;
 }
 
-export function Step(props: StepProps) {
+export default function Step(props: StepProps) {
 
   const {
     title, 

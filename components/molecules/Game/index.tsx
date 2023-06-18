@@ -8,7 +8,7 @@ interface GameProps {
   href: string;
 }
 
-export function Game(props: GameProps) {
+export default function Game(props: GameProps) {
 
   const {
     title,

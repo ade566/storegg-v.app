@@ -5,7 +5,7 @@ interface AuthProps {
   isLogin?: boolean;
 }
 
-export function Auth(props: AuthProps) {
+export default function Auth(props: AuthProps) {
 
   const {isLogin} = props
 

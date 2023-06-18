@@ -6,7 +6,7 @@ interface RowProps {
   styleLeft?: boolean;
 }
 
-export function CountRow(props: RowProps) {
+export default function CountRow(props: RowProps) {
 
   const {
     value,
