@@ -114,7 +114,7 @@ export default function memberDashboard() {
                 </defs>
               </svg>
               <p className="item-title m-0">
-                <a href="../member/edit-profile.html" className="text-lg text-decoration-none">Settings</a>
+                <a href="/member/edit-profile" className="text-lg text-decoration-none">Settings</a>
               </p>
             </div>
             <div className="item mb-30">
