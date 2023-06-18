@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Menu } from "./Menu";
 import Link from "next/link";
+import { Auth } from "./Auth";
 
 export function Navbar() {
   return (
@@ -23,12 +24,8 @@ export function Navbar() {
               <Menu title="Discover" href="/discovers" />
               <Menu title="Global Rank" href="/global-rank" />
 
-              <li className="nav-item my-auto">
-                <Link className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
-                  href="/sign-in" role="button">
-                  Sign In
-                </Link>
-              </li>
+              <Auth isLogin />
+
             </ul>
           </div>
         </div>
