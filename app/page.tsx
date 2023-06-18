@@ -3,15 +3,13 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 
-import Image from 'next/image'
 import { Navbar } from '@/components/organisms/Navbar';
-import Link from 'next/link';
-import { Header } from '@/components/organisms/Header/Index';
 import { TopUpSteps } from '@/components/organisms/TopUpSteps';
 import { TopGames } from '@/components/organisms/TopGames';
 import { Footer } from '@/components/organisms/Footer';
 import { Count } from '@/components/organisms/Count';
 import { Story } from '@/components/organisms/Story';
+import { MainBanner } from '@/components/organisms/MainBanner/Index';
 
 export default function Home() {
   useEffect(() => {
@@ -21,7 +19,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <Header />
+      <MainBanner />
 
       <TopUpSteps />
 

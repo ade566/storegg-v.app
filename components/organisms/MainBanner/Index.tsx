@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export function Header() {
+export function MainBanner() {
   return (
     <section className="header pt-lg-60 pb-50">
       <div className="container-xxl container-fluid">
