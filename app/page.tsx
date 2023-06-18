@@ -1,5 +1,3 @@
-"use client"; // This is a client component
-
 import { useEffect } from 'react';
 import AOS from 'aos';
 
