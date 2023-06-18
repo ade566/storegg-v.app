@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/utilities.css'
 import '../styles/homepage.css'
 import '../styles/detail.css'
+import '../styles/checkout.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
