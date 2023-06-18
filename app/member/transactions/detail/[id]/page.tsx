@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export default function memberTransactionDetail() {
+export default function memberTransactionDetail({ params }: { params: { id: string } }) {
   return (
     <section className="transactions-detail overflow-auto">
       {/* SIDEBAR */}
       <main className="main-wrapper">
         <div className="ps-lg-0">
-          <h2 className="text-4xl fw-bold color-palette-1 mb-30">Details #GG001</h2>
+          <h2 className="text-4xl fw-bold color-palette-1 mb-30">Details #{params.id}</h2>
           <div className="details">
             <div className="main-content main-content-card overflow-auto">
               <section className="checkout mx-auto">

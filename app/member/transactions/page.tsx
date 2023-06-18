@@ -64,7 +64,7 @@ export default function memberTransactions() {
                       </div>
                     </td>
                     <td>
-                      <a href="transactions/detail"
+                      <a href="transactions/detail/1"
                         className="btn btn-status rounded-pill text-sm">Details</a>
                     </td>
                   </tr>
@@ -92,7 +92,7 @@ export default function memberTransactions() {
                       </div>
                     </td>
                     <td>
-                      <a href="../member/transactions-detail.html"
+                      <a href="transactions/detail/2"
                         className="btn btn-status rounded-pill text-sm">Details</a>
                     </td>
                   </tr>
@@ -120,7 +120,7 @@ export default function memberTransactions() {
                       </div>
                     </td>
                     <td>
-                      <a href="../member/transactions-detail.html"
+                      <a href="transactions/detail/3"
                         className="btn btn-status rounded-pill text-sm">Details</a>
                     </td>
                   </tr>
@@ -148,7 +148,7 @@ export default function memberTransactions() {
                       </div>
                     </td>
                     <td>
-                      <a href="../member/transactions-detail.html"
+                      <a href="transactions/detail/4"
                         className="btn btn-status rounded-pill text-sm">Details</a>
                     </td>
                   </tr>
