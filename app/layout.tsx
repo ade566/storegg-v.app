@@ -18,6 +18,7 @@ import '../styles/404-not-found.css'
 import '../styles/sidebar.css'
 import '../styles/overview.css'
 import '../styles/transactions.css'
+import '../styles/transactions-detail.css'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -64,7 +64,7 @@ export default function memberTransactions() {
                       </div>
                     </td>
                     <td>
-                      <a href="../member/transactions-detail.html"
+                      <a href="transactions/detail"
                         className="btn btn-status rounded-pill text-sm">Details</a>
                     </td>
                   </tr>
