@@ -55,7 +55,7 @@ export default function Home() {
                 </li>
                 <li className="nav-item my-auto">
                   <a className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
-                    href="./src/sign-in.html" role="button">Sign
+                    href="/sign-in" role="button">Sign
                     In</a>
                 </li>
               </ul>
