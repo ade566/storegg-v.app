@@ -1,4 +1,4 @@
-import { Step } from "./Step/Index";
+import { Step } from "./Step";
 
 export function TopUpSteps() {
   return (

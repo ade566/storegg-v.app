@@ -1,4 +1,4 @@
-import { CountRow } from "./Row"
+import { CountRow } from "./Row";
 
 export function Count() {
   return (

@@ -22,9 +22,16 @@ export function Auth(props: AuthProps) {
           </a>
 
           <ul className="dropdown-menu border-0" aria-labelledby="dropdownMenuLink">
-            <li><a className="dropdown-item text-lg color-palette-2" href="#">My Profile</a></li>
+            <li>
+              <Link className="dropdown-item text-lg color-palette-2" href="/member">
+                My Profile
+              </Link>
+            </li>
             <li><a className="dropdown-item text-lg color-palette-2" href="#">Wallet</a></li>
-            <li><a className="dropdown-item text-lg color-palette-2" href="#">Account Settings</a>
+            <li>
+              <Link className="dropdown-item text-lg color-palette-2" href="/member/edit-profile">
+                Account Settings
+              </Link>
             </li>
             <li><a className="dropdown-item text-lg color-palette-2" href="#">Log Out</a></li>
           </ul>

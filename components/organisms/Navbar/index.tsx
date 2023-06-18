@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Menu } from "./Menu";
 import Link from "next/link";
 import { Auth } from "./Auth";
+import { Menu } from "./Menu";
 
 export function Navbar() {
   return (
@@ -17,7 +17,7 @@ export function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-              
+
               <Menu title="Home" active />
               <Menu title="Games" href="/games" />
               <Menu title="Rewards" href="/rewards" />

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <section className="not-found mx-auto pt-145 pb-md-212 pb-100">
@@ -189,8 +191,9 @@ export default function NotFound() {
             tidak tersedia pada sistem kami dan menghubungi</p>
         </div>
         <div className="button-group d-flex flex-column mx-auto">
-          <a className="btn btn-homepage fw-medium text-lg text-white rounded-pill" href="#"
-            role="button">Homepage</a>
+          <Link className="btn btn-homepage fw-medium text-lg text-white rounded-pill" href="/">
+            Homepage
+          </Link>
         </div>
       </div>
     </section> 
