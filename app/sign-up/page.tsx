@@ -42,10 +42,10 @@ export default function SignUp() {
           </div>
           <div className="button-group d-flex flex-column mx-auto pt-50">
             <a className="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
-              href="/sign-up-photo" role="button">Continue</a>
+              href="/sign-up/photo" role="button">Continue</a>
             {/* <button type="submit" className="btn btn-sign-up fw-medium text-lg text-white rounded-pill mb-16"
               role="button">Continue</button> */}
-            <a className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill" href="../src/sign-in.html"
+            <a className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill" href="sign-in"
               role="button">Sign
               In</a>
           </div>
