@@ -41,7 +41,7 @@ export default function memberDashboard() {
                   stroke-linejoin="round" />
               </svg>
               <p className="item-title m-0">
-                <a href="../member/transactions.html" className="text-lg text-decoration-none">Transactions</a>
+                <a href="/member/transactions" className="text-lg text-decoration-none">Transactions</a>
               </p>
             </div>
             <div className="item mb-30">
