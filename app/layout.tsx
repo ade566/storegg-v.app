@@ -14,6 +14,7 @@ import '../styles/sign-in.css'
 import '../styles/sign-up.css'
 import '../styles/sign-up-photo.css'
 import '../styles/sign-up-success.css'
+import '../styles/404-not-found.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
