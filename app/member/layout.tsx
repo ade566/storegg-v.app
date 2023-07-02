@@ -5,29 +5,28 @@ import Script from 'next/script'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import '../styles/utilities.css'
-import '../styles/homepage.css'
-import '../styles/detail.css'
-import '../styles/checkout.css'
-import '../styles/complete-checkout.css'
-import '../styles/sign-in.css'
-import '../styles/sign-up.css'
-import '../styles/sign-up-photo.css'
-import '../styles/sign-up-success.css'
-import '../styles/404-not-found.css'
+import '../../styles/utilities.css'
+import '../../styles/404-not-found.css'
+import '../../styles/sidebar.css'
+import '../../styles/overview.css'
+import '../../styles/transactions.css'
+import '../../styles/transactions-detail.css'
+import '../../styles/edit-profile.css'
+import '../../styles/navbar-log-in.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Store GG',
+  title: 'Member Store GG',
   description: 'Top Up Game best way in Store GG',
 }
 
-export default function RootLayout({
+export default function MemberLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <head>
@@ -43,7 +42,7 @@ export default function RootLayout({
       
       </head>
       <body className={inter.className}>
-        
+
         {children}
 
         {/* <Bootstrap */}
