@@ -6,27 +6,24 @@ import Script from 'next/script'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import '../../styles/utilities.css'
-import '../../styles/404-not-found.css'
-import '../../styles/sidebar.css'
-import '../../styles/overview.css'
-import '../../styles/transactions.css'
-import '../../styles/transactions-detail.css'
-import '../../styles/edit-profile.css'
-import '../../styles/navbar-log-in.css'
+import '../../styles/homepage.css'
+import '../../styles/detail.css'
+
+import Navbar from '@/components/organisms/Navbar';
+import Footer from '@/components/organisms/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Member Store GG',
+  title: 'Store GG',
   description: 'Top Up Game best way in Store GG',
 }
 
-export default function MemberLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-
   return (
     <html lang="en">
       <head>
@@ -42,8 +39,12 @@ export default function MemberLayout({
       
       </head>
       <body className={inter.className}>
+        
+        <Navbar />
 
         {children}
+
+        <Footer />
 
         {/* <Bootstrap */}
         <Script id="bootstrap-js" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
