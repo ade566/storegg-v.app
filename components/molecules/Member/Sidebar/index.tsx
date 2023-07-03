@@ -13,9 +13,7 @@ export default function MemberSidebar() {
         </div>
         <div className="menus">
 
-          <SidebarMenu title="Overview" href="/member" image="/icon/sidebar/overview.svg" />
-
-          <SidebarMenu title="Transactions" href="/member/transactions" image="/icon/sidebar/transactions.svg" />
+          <SidebarMenu title="Overview" href="/member" image="/icon/sidebar/overview.svg" active />
 
           <SidebarMenu title="Transactions" href="/member/transactions" image="/icon/sidebar/transactions.svg" />
 
