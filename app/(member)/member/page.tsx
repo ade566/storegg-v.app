@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import CategoriesSpent from "@/components/organisms/Member/Overview/CategoriesSpent";
 import TransactionRows from "@/components/organisms/Member/Overview/TransactionRows";
 import MemberSidebar from "@/components/molecules/Member/Sidebar";
+import MemberTopTitle from '@/components/atoms/Member/TopTitle';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -14,7 +15,7 @@ export default function memberDashboard() {
 
       <main className="main-wrapper">
         <div className="ps-lg-0">
-          <h2 className="text-4xl fw-bold color-palette-1 mb-30">Overview</h2>
+          <MemberTopTitle title="Overview" />
           <div className="top-up-categories mb-30">
             <p className="text-lg fw-medium color-palette-1 mb-14">Top Up Categories</p>
             <div className="main-content">

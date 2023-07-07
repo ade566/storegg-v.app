@@ -1,3 +1,4 @@
+import MemberTopTitle from "@/components/atoms/Member/TopTitle";
 import MemberSidebar from "@/components/molecules/Member/Sidebar";
 import Image from "next/image";
 
@@ -7,7 +8,7 @@ export default function memberTransactionDetail({ params }: { params: { id: stri
       <MemberSidebar activeMenu='transactions' />
       <main className="main-wrapper">
         <div className="ps-lg-0">
-          <h2 className="text-4xl fw-bold color-palette-1 mb-30">Details #{params.id}</h2>
+          <MemberTopTitle title={`Details #${params.id}`} />
           <div className="details">
             <div className="main-content main-content-card overflow-auto">
               <section className="checkout mx-auto">
