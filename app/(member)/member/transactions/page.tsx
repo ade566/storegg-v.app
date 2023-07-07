@@ -1,6 +1,7 @@
 import MemberTopTitle from "@/components/atoms/Member/TopTitle";
 import MemberSidebar from "@/components/molecules/Member/Sidebar";
-import Image from "next/image";
+import MemberTransactionButtonTab from "@/components/organisms/Member/Transaction/ButtonTab";
+import MemberTransactionRow from "@/components/organisms/Member/Transaction/Row";
 
 export default function memberTransactions() {
   return (
@@ -16,13 +17,11 @@ export default function memberTransactions() {
           <div className="row mt-30 mb-20">
             <div className="col-lg-12 col-12 main-content">
               <div id="list_status_title">
-                <a data-filter="*" href="#" className="btn btn-status rounded-pill text-sm btn-active me-3">All
-                  Trx</a>
-                <a data-filter="success" href="#"
-                  className="btn btn-status rounded-pill text-sm me-3">Success</a>
-                <a data-filter="pending" href="#"
-                  className="btn btn-status rounded-pill text-sm me-3">Pending</a>
-                <a data-filter="failed" href="#" className="btn btn-status rounded-pill text-sm me-3">Failed</a>
+                <MemberTransactionButtonTab 
+                  title="All Trx" filter="*" active />
+                <MemberTransactionButtonTab title="Success" filter="success" />
+                <MemberTransactionButtonTab title="Pending" filter="pending" />
+                <MemberTransactionButtonTab title="Failed" filter="failed" />
               </div>
             </div>
           </div>
@@ -40,120 +39,37 @@ export default function memberTransactions() {
                   </tr>
                 </thead>
                 <tbody id="list_status_item">
-                  <tr data-category="pending" className="align-middle">
-                    <th scope="row">
-                      <Image className="float-start me-3 mb-lg-0 mb-3" src="/img/overview-1.png"
-                        width={80} height={60} alt="" />
-                      <div className="game-title-header">
-                        <p className="game-title fw-medium text-start color-palette-1 m-0">Mobile
-                          Legends:
-                          The New
-                          Battle 2021</p>
-                        <p className="text-xs fw-normal text-start color-palette-2 m-0">Desktop</p>
-                      </div>
-                    </th>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">200 Gold</p>
-                    </td>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">Rp 290.000</p>
-                    </td>
-                    <td>
-                      <div>
-                        <span className="float-start icon-status pending"></span>
-                        <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                          Pending</p>
-                      </div>
-                    </td>
-                    <td>
-                      <a href="transactions/detail/1"
-                        className="btn btn-status rounded-pill text-sm">Details</a>
-                    </td>
-                  </tr>
-                  <tr data-category="success" className="align-middle">
-                    <th scope="row">
-                      <Image className="float-start me-3 mb-lg-0 mb-3" src="/img/overview-2.png"
-                        width={80} height={60} alt="" />
-                      <div className="game-title-header">
-                        <p className="game-title fw-medium text-start color-palette-1 m-0">Call of
-                          Duty:Modern</p>
-                        <p className="text-xs fw-normal text-start color-palette-2 m-0">Desktop</p>
-                      </div>
-                    </th>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">550 Gold</p>
-                    </td>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">Rp 740.000</p>
-                    </td>
-                    <td>
-                      <div>
-                        <span className="float-start icon-status success"></span>
-                        <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                          Success</p>
-                      </div>
-                    </td>
-                    <td>
-                      <a href="transactions/detail/2"
-                        className="btn btn-status rounded-pill text-sm">Details</a>
-                    </td>
-                  </tr>
-                  <tr data-category="failed" className="align-middle">
-                    <th scope="row">
-                      <Image className="float-start me-3 mb-lg-0 mb-3" src="/img/overview-3.png"
-                        width={80} height={60} alt="" />
-                      <div className="game-title-header">
-                        <p className="game-title fw-medium text-start color-palette-1 m-0">Clash of
-                          Clans</p>
-                        <p className="text-xs fw-normal text-start color-palette-2 m-0">Mobile</p>
-                      </div>
-                    </th>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">100 Gold</p>
-                    </td>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">Rp 120.000</p>
-                    </td>
-                    <td>
-                      <div>
-                        <span className="float-start icon-status failed"></span>
-                        <p className="fw-medium text-start color-palette-1 m-0 position-relative">Failed
-                        </p>
-                      </div>
-                    </td>
-                    <td>
-                      <a href="transactions/detail/3"
-                        className="btn btn-status rounded-pill text-sm">Details</a>
-                    </td>
-                  </tr>
-                  <tr data-category="pending" className="align-middle">
-                    <th scope="row">
-                      <Image className="float-start me-3 mb-lg-0 mb-3" src="/img/overview-4.png"
-                        width={80} height={60} alt="" />
-                      <div className="game-title-header">
-                        <p className="game-title fw-medium text-start color-palette-1 m-0">The Royal
-                          Game</p>
-                        <p className="text-xs fw-normal text-start color-palette-2 m-0">Mobile</p>
-                      </div>
-                    </th>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">225 Gold</p>
-                    </td>
-                    <td>
-                      <p className="fw-medium color-palette-1 m-0">Rp 200.000</p>
-                    </td>
-                    <td>
-                      <div>
-                        <span className="float-start icon-status pending"></span>
-                        <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                          Pending</p>
-                      </div>
-                    </td>
-                    <td>
-                      <a href="transactions/detail/4"
-                        className="btn btn-status rounded-pill text-sm">Details</a>
-                    </td>
-                  </tr>
+                  <MemberTransactionRow 
+                    image="/img/overview-1.png" 
+                    title="Mobile Legends: The New Battle 2021" 
+                    category="Desktop" 
+                    item="200 Gold" 
+                    price={290000} 
+                    status="Pending" />
+
+                  <MemberTransactionRow 
+                    image="/img/overview-2.png" 
+                    title="Call of Duty: Modern" 
+                    category="Desktop" 
+                    item="550 Gold" 
+                    price={740000} 
+                    status="Success" />
+
+                  <MemberTransactionRow 
+                    image="/img/overview-3.png" 
+                    title="Clash of Clans" 
+                    category="Mobile" 
+                    item="100 Gem" 
+                    price={120000} 
+                    status="Failed" />
+
+                  <MemberTransactionRow 
+                    image="/img/overview-4.png" 
+                    title="The Royal Game" 
+                    category="Mobile" 
+                    item="225 Gold" 
+                    price={200000} 
+                    status="Pending" />
                 </tbody>
               </table>
             </div>
