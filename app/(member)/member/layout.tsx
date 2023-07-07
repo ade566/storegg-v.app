@@ -2,7 +2,6 @@
 
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
-import MemberSidebar from "@/components/molecules/Member/Sidebar";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -44,11 +43,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
 
-        <section className="overview overflow-auto">
-          <MemberSidebar />
-
-          {children}
-        </section>
+        {children}
 
         {/* <Bootstrap */}
         <Script id="bootstrap-js" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

@@ -1,9 +1,10 @@
+import MemberSidebar from "@/components/molecules/Member/Sidebar";
 import Image from "next/image";
 
 export default function memberTransactionDetail({ params }: { params: { id: string } }) {
   return (
     <section className="transactions-detail overflow-auto">
-      {/* SIDEBAR */}
+      <MemberSidebar activeMenu='transactions' />
       <main className="main-wrapper">
         <div className="ps-lg-0">
           <h2 className="text-4xl fw-bold color-palette-1 mb-30">Details #{params.id}</h2>

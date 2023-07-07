@@ -1,9 +1,10 @@
+import MemberSidebar from "@/components/molecules/Member/Sidebar";
 import Image from "next/image";
 
 export default function memberTransactions() {
   return (
     <section className="transactions overflow-auto">
-      {/* SIDEBAR */}
+      <MemberSidebar activeMenu='transactions' />
       <main className="main-wrapper">
         <div className="ps-lg-0">
           <h2 className="text-4xl fw-bold color-palette-1 mb-30">My Transactions</h2>

@@ -1,9 +1,10 @@
+import MemberSidebar from "@/components/molecules/Member/Sidebar"
 import Image from "next/image"
 
 export default function memberEditProfile() {
   return (
     <section className="edit-profile overflow-auto">
-      {/* SIDEBAR */}
+      <MemberSidebar activeMenu='setting' />
       <main className="main-wrapper">
         <div className="ps-lg-0">
           <h2 className="text-4xl fw-bold color-palette-1 mb-30">Settings</h2>
